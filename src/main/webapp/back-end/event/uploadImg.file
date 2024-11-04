@@ -1,0 +1,22 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%@ page import="java.io.File" %>
+<%@ page import="java.io.IOException" %>
+<%! String strPath=null; %>
+<%! String fileName=null; %>
+<% 
+	strPath=application.getRealPath("/back-end/event/images_upload");
+	System.out.println(strPath);
+	File imageDir = new File(strPath);
+	File[] imageFiles=imageDir.listFiles();
+	if(imageFiles.length>0){
+		fileName = imageFiles[0].getName();
+			System.out.println(fileName);%>
+    <img src="${pageContext.request.contextPath}/back-end/event/images_upload/<%= fileName %>" style="width:100%; height=400px"/>
+    
+
+<% 	}%>
+<FORM action="uploadServlet3_simple.do" method=post enctype="multipart/form-data">
+    <input type="file" name="upfile1" accept="image/png, image/jpeg">
+	<input type="submit" value="上傳">
+</FORM>

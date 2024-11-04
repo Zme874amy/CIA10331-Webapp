@@ -9,6 +9,7 @@
 <html>
 <head>
 <title>活動資料 - listOneEvent.jsp</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body bgcolor='white'>
@@ -21,7 +22,7 @@
 	</td></tr>
 </table>
 
-<table>
+<table class="table">
 	<tr>
 		<th>活動編號</th>
 		<th>商家編號</th>

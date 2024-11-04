@@ -5,3 +5,5 @@ bin/
 .DS_store
 *.idea
 *.iml
+/build/
+/target/

@@ -9,6 +9,7 @@
 </head>
 <body bgcolor='white' class="mx-auto p-2" style="width: 800px;">
 
+<%@ include file="uploadImg.file" %> 
 <table class="table">
    <tr><td><h3>G4 Event: Home</h3><h4>( MVC )</h4></td></tr>
 </table>
